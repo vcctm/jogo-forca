@@ -37,9 +37,9 @@ public class Tracinhos implements Cloneable {
 
     @Override
     public String toString() {
-        String comEspacos = new String();
+        String comEspacos = "";
         for (int i = 0; i < this.texto.length; i++) {
-            comEspacos += String.valueOf(this.texto[i]) + " ";
+            comEspacos += this.texto[i] + " ";
         }
         // should be Arrays.toString() ?
         return comEspacos;
